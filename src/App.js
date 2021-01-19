@@ -7,10 +7,12 @@ import './App.css';
 // import FunctionClick from './components/FunctionClick';
 // import ClassClick from './components/ClassClick';
 import EventBind from './components/EventBind';
+import ParentComponent from './components/ParentComponent';
 
 function App() {
   return (
     <div className="App">
+      <ParentComponent />
       {/* <Greet name="Samuel" heroName="Superman">
         <p>This is the children</p>
       </Greet>
@@ -24,7 +26,7 @@ function App() {
       {/* <Counter></Counter>  */}
       {/* <FunctionClick></FunctionClick>
       <ClassClick></ClassClick> */}
-      <EventBind />
+      {/* <EventBind /> */}
     </div>
   );
 }
