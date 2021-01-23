@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-// import FagmentDemo from './components/FagmentDemo';
-import Table from './components/Table';
+import PureComp from './components/PureComp';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* <FagmentDemo /> */}
-        <Table />
+        <PureComp />
       </div>
     );
   }
