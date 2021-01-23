@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import LifecycleB from './LifecycleB';
 
 class LifecycleB extends Component {
   constructor(props) {
@@ -16,10 +17,22 @@ class LifecycleB extends Component {
   componentDidMount() {
     console.log('LifecycleB componentDidMount');
   }
+  shouldComponentUpdate() {
+    console.log('LifecycleB shouldComponentUpdate');
+  }
+  getSnapshotBeforeUpdate(prevProps, prevState) {
+    console.log('LifeCycleB getSnapshotBeforeUpdate');
+  }
+  componentDidUpdate() {}
 
   render() {
     console.log('LifecycleB render');
-    return <div>LifecycleB</div>;
+    return (
+      <div>
+        <div>LifecycleB</div>
+        <LifecycleB />
+      </div>
+    );
   }
 }
 
